@@ -34,9 +34,8 @@ for domain in $($PLESK_BIN bin domain --list | grep '^mail\.\|^[^.]*$'); do
 
     if [[ "$mail_certificate" == "Lets Encrypt $domain" ]]; then
         echo "Renew & Re-Assign Cert for $domain_without_prefix Mail Services with Cert: $mail_certificate"
-        # Uncomment the lines below to update certificates and subscription settings
-        # $PLESK_BIN bin certificate --update "$mail_certificate" -domain $domain
-        # $PLESK_BIN bin subscription_settings --update $domain_without_prefix -mail_certificate "mail_certificate"
+        $PLESK_BIN bin certificate --update "$mail_certificate" -domain $domain
+        $PLESK_BIN bin subscription_settings --update $domain_without_prefix -mail_certificate "mail_certificate"
     else
         echo "Mail certificate is not 'Lets Encrypt for $domain_without_prefix'"
     fi
