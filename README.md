@@ -60,7 +60,7 @@ This will execute the script on the first day of every other month.
 
 ## Acknowledgment
 
-This script was developed by Andreas Schnederle-Wagner, Futureweb Gmbh (https://www.futureweb.at).
+This script was developed by Andreas Schnederle-Wagner, Futureweb GmbH (https://www.futureweb.at).
 
 ---
 
