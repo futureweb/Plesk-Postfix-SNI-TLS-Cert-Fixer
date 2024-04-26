@@ -15,6 +15,7 @@ To reproduce the issue, follow these steps:
 3. Create an SSL certificate (Let’s Encrypt or other) for the `mail.example.com` domain using SSL.
 4. Assign the `mail.example.com` certificate to the mail services of the `example.com` domain.
 5. Renew the certificate for `mail.example.com`.
+6. Postfix is still delivering the old Cert as it's cached within Postfix Certs Hash Map (/var/spool/postfix/plesk/certs.db).
 
 ## Solution
 
