@@ -19,7 +19,7 @@ To reproduce the issue, follow these steps:
 
 ## Solution
 
-The provided script fixes the issue by checking whether a renewed certificate is still actively assigned to other domains/services. If so, it updates the configuration files, specifically the Postfix cert hash map, to prevent the delivery of outdated certificates when a current one exists.
+The provided script fixes the issue by updating certificates in question and re-assigning them to the primary Domain Mail services. Which results in updated Configuration Files, especifically the Postfix Certs hash map, to prevent the delivery of outdated certificates when a current one exists.
 
 ## Usage
 
