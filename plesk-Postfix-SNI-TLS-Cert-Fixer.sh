@@ -4,7 +4,8 @@
 # Futureweb GmbH
 # https://www.futureweb.at
 #
-# fix for: https://talk.plesk.com/threads/issues-with-ssl-certificate-renewal-for-mail-services-in-plesk-seeking-automated-solution-via-cli-or-api.374148/
+# Latest Version: https://github.com/futureweb/Plesk-Postfix-SNI-TLS-Cert-Fixer/
+# Fix for: https://talk.plesk.com/threads/issues-with-ssl-certificate-renewal-for-mail-services-in-plesk-seeking-automated-solution-via-cli-or-api.374148/
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
